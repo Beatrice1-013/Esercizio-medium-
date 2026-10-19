@@ -1,0 +1,327 @@
+/* IMPOSTAZIONI GENERALI */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #242424;
+    background-color: white;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #757575;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    padding: 0 6%;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.medium-logo {
+    width: 220px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav i {
+    font-size: 20px;
+    color: #757575;
+}
+
+nav button {
+    background-color: white;
+    border: 1px solid #757575;
+    border-radius: 25px;
+    padding: 9px 15px;
+    color: #757575;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #f4511e;
+    color: white;
+}
+
+
+/* CONTENITORE PRINCIPALE */
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.articles {
+    width: 65%;
+    padding: 35px 45px 50px 20px;
+    border-right: 1px solid #e6e6e6;
+}
+
+.sidebar {
+    width: 35%;
+    padding: 35px 25px 40px 35px;
+}
+
+
+/* NAVIGAZIONE ARTICOLI */
+
+.tabs {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 18px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.tabs span {
+    font-size: 12px;
+    color: #757575;
+}
+
+.tabs span:last-child {
+    color: #242424;
+    border-bottom: 2px solid #242424;
+    padding-bottom: 18px;
+    margin-bottom: -19px;
+}
+
+/* ARTICOLI */
+
+.article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 45px;
+}
+
+.article-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+}
+
+.article h2 {
+    font-size: 21px;
+    line-height: 1.3;
+}
+
+.article p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #757575;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.author img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #242424;
+}
+
+.details {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.article-image {
+    width: 30%;
+    height: 135px;
+    object-fit: cover;
+}
+
+
+/* SEZIONE TWITTER */
+
+.twitter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 15px 10px 35px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.social-logos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-logos img {
+    width: 30px;
+    height: auto;
+}
+.twitter p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.twitter button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    border: 1px solid #757575;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 14px;
+}
+
+.twitter button img {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* ARGOMENTI CONSIGLIATI */
+
+.topics {
+    margin-top: 35px;
+}
+
+.sidebar h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.topic-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.topic-list span {
+    background-color: #f2f2f2;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 13px;
+}
+
+
+/* UTENTI DA SEGUIRE */
+
+.follow {
+    margin-top: 40px;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user div {
+    width: 60%;
+}
+
+.user h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.user p {
+    font-size: 12px;
+    color: #757575;
+}
+
+.user button {
+    background-color: white;
+    border: 1px solid #757575;
+    border-radius: 25px;
+    padding: 7px 13px;
+}
+
+
+/* ARTICOLI SALVATI */
+
+.saved {
+    margin-top: 40px;
+}
+
+.saved h4 {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.saved p {
+    font-size: 12px;
+    color: #757575;
+    margin-bottom: 12px;
+}
+
+.saved a {
+    display: inline-block;
+    color: green;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 45px;
+    padding-top: 20px;
+    border-top: 1px solid #e6e6e6;
+}
+
+footer a {
+    font-size: 12px;
+    color: #757575;
+}
